@@ -1,0 +1,138 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color:black;
+
+}
+
+
+:root {
+    --darkblue: hsl(213, 96%, 18%);
+    --silver: hsl(231, 11%, 63%);
+}
+
+
+
+.all_forms {
+    display:flex;
+    justify-content:center;
+    margin-top:2em;
+    gap:5em;
+
+}
+
+
+.form-container {
+    display:flex;
+    flex-direction:column;
+    border:1px solid black;
+    padding:2em;
+    padding-bottom: 7em;
+    border-radius:5px;
+    width:20%;
+    position:relative;
+}
+
+.retailer-container{
+    position:relative;
+    margin-bottom:2em;
+}
+
+.manfacturer-container {
+    margin-top:1em;
+}
+
+
+.form_class {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header {
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+#addRetailer {
+    bottom:-33px;
+    right:0px;
+    position:absolute;
+}
+
+.addButton {
+    width: 35%;
+    padding: 0.6em 1em;
+    border-radius: 0.2em;
+    background-color: #164b8a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    right: 37px;
+
+}
+
+.subheader {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: var(--silver);
+    font-weight: 500;
+}
+
+
+label {
+    color: hsl(213, 96%, 18%);
+    font-weight: 400;
+}
+input[type=text], input[type=number] {
+    padding: .5em;
+    margin-bottom:1em;
+    border-radius: 0.3em;
+
+}
+
+#select-retailers {
+    margin-bottom:2em;
+}
+
+
+#grid-container {
+    display: grid;
+    margin: 20px auto;
+    text-align: center;
+    padding: 40px;
+    max-width: 1500px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-auto-rows: minmax(30px, auto);
+    gap: 30px;
+}
+
+.shoeCard {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid black;
+    border-radius: 20px;
+    padding:1em;
+    
+}
+
+.icons{
+   
+    margin-top:1em;
+    display:flex;
+    justify-content:space-around;
+    width:80%;
+}
+
+.icons i {
+    cursor:pointer;
+}
